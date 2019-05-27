@@ -5,15 +5,25 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { oc } from "ts-optchain"
+import { SiteMetadataQueryQuery } from "../graphqlTypes"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+type MetaProps = JSX.IntrinsicElements["meta"]
+
+interface Props {
+  description?: string
+  lang?: string
+  meta?: MetaProps[]
+  title: string
+}
+
+const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
+  const { site }: SiteMetadataQueryQuery = useStaticQuery(
     graphql`
-      query {
+      query SiteMetadataQuery {
         site {
           siteMetadata {
             title
@@ -25,7 +35,7 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || oc(site).siteMetadata.description("")
 
   return (
     <Helmet
@@ -33,7 +43,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${oc(site).siteMetadata.title("")}`}
       meta={[
         {
           name: `description`,
@@ -57,7 +67,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: oc(site).siteMetadata.author(""),
         },
         {
           name: `twitter:title`,
@@ -67,6 +77,7 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        // @ts-ignore
       ].concat(meta)}
     />
   )
@@ -76,13 +87,6 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

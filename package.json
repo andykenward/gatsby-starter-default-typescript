@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-default-typescript",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Andy Kenward <hello@andykenward.com>",
   "dependencies": {
     "gatsby": "^2.7.1",
     "gatsby-image": "^2.1.1",
@@ -11,33 +11,49 @@
     "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.1.1",
+    "gatsby-plugin-typescript": "^2.0.15",
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-sharp": "^2.1.19",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "ts-optchain": "^0.1.7"
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "@graphql-codegen/cli": "^1.2.0",
+    "@graphql-codegen/typescript": "^1.2.0",
+    "@graphql-codegen/typescript-operations": "^1.2.0",
+    "@types/node": "^12.0.2",
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-helmet": "^5.0.8",
+    "prettier": "^1.17.1",
+    "typescript": "^3.4.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "typescript"
   ],
   "license": "MIT",
   "scripts": {
+    "prebuild": "npm run type-check",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "generate": "graphql-codegen",
+    "generate:watch": "graphql-codegen --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/andykenward/gatsby-starter-default-typescript"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/andykenward/gatsby-starter-default-typescript/issues"
   }
 }
