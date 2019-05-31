@@ -710,7 +710,10 @@ export type ImageSharpFixedArgs = {
   toFormat: ImageFormat
   toFormatBase64: ImageFormat
   cropFocus: ImageCropFocus
+  fit: ImageFit
+  background: Scalars["String"]
   rotate: Scalars["Int"]
+  trim: Scalars["Float"]
 }
 
 export type ImageSharpResolutionsArgs = {
@@ -726,7 +729,10 @@ export type ImageSharpResolutionsArgs = {
   toFormat: ImageFormat
   toFormatBase64: ImageFormat
   cropFocus: ImageCropFocus
+  fit: ImageFit
+  background: Scalars["String"]
   rotate: Scalars["Int"]
+  trim: Scalars["Float"]
 }
 
 export type ImageSharpFluidArgs = {
@@ -745,6 +751,7 @@ export type ImageSharpFluidArgs = {
   fit: ImageFit
   background: Scalars["String"]
   rotate: Scalars["Int"]
+  trim: Scalars["Float"]
   sizes: Scalars["String"]
   srcSetBreakpoints: Array<Maybe<Scalars["Int"]>>
 }
@@ -765,6 +772,7 @@ export type ImageSharpSizesArgs = {
   fit: ImageFit
   background: Scalars["String"]
   rotate: Scalars["Int"]
+  trim: Scalars["Float"]
   sizes: Scalars["String"]
   srcSetBreakpoints: Array<Maybe<Scalars["Int"]>>
 }
@@ -782,7 +790,10 @@ export type ImageSharpResizeArgs = {
   traceSVG?: Maybe<Potrace>
   toFormat: ImageFormat
   cropFocus: ImageCropFocus
+  fit: ImageFit
+  background: Scalars["String"]
   rotate: Scalars["Int"]
+  trim: Scalars["Float"]
 }
 
 export type ImageSharpConnection = {
