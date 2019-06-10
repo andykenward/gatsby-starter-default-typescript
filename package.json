@@ -22,7 +22,7 @@
     "ts-optchain": "^0.1.7"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^1.2.0",
+    "@graphql-codegen/cli": "^1.2.1",
     "@graphql-codegen/typescript": "^1.2.0",
     "@graphql-codegen/typescript-operations": "^1.2.0",
     "@types/node": "^12.0.7",
