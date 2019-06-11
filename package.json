@@ -41,7 +41,7 @@
     "prebuild": "npm run type-check",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css}",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css}'",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
