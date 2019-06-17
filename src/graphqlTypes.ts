@@ -1296,7 +1296,6 @@ export type QuerySitePageArgs = {
   children?: Maybe<NodeFilterListInput>
   internal?: Maybe<InternalFilterInput>
   path?: Maybe<StringQueryOperatorInput>
-  jsonName?: Maybe<StringQueryOperatorInput>
   internalComponentName?: Maybe<StringQueryOperatorInput>
   component?: Maybe<StringQueryOperatorInput>
   componentChunkName?: Maybe<StringQueryOperatorInput>
@@ -1597,7 +1596,6 @@ export type SitePage = Node & {
   children: Array<Node>
   internal: Internal
   path?: Maybe<Scalars["String"]>
-  jsonName?: Maybe<Scalars["String"]>
   internalComponentName?: Maybe<Scalars["String"]>
   component?: Maybe<Scalars["String"]>
   componentChunkName?: Maybe<Scalars["String"]>
@@ -1722,7 +1720,6 @@ export enum SitePageFieldsEnum {
   internal___owner = "internal___owner",
   internal___type = "internal___type",
   path = "path",
-  jsonName = "jsonName",
   internalComponentName = "internalComponentName",
   component = "component",
   componentChunkName = "componentChunkName",
@@ -1805,7 +1802,6 @@ export type SitePageFilterInput = {
   children?: Maybe<NodeFilterListInput>
   internal?: Maybe<InternalFilterInput>
   path?: Maybe<StringQueryOperatorInput>
-  jsonName?: Maybe<StringQueryOperatorInput>
   internalComponentName?: Maybe<StringQueryOperatorInput>
   component?: Maybe<StringQueryOperatorInput>
   componentChunkName?: Maybe<StringQueryOperatorInput>
