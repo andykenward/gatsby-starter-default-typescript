@@ -30,7 +30,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
     "prettier": "^1.18.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.2"
   },
   "keywords": [
     "gatsby",
