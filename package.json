@@ -14,7 +14,7 @@
     "gatsby-plugin-typescript": "^2.1.0",
     "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-sharp": "^2.2.0",
-    "graphql": "^14.3.1",
+    "graphql": "^14.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
