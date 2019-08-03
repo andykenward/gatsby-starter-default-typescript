@@ -6,7 +6,7 @@
   "author": "Andy Kenward <hello@andykenward.com>",
   "dependencies": {
     "@babel/core": "^7.0.0-0",
-    "gatsby": "^2.13.41",
+    "gatsby": "^2.13.50",
     "gatsby-image": "^2.2.7",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
