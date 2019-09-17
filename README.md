@@ -34,7 +34,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     To generate GraphQL TypeScript typings using [GraphQL Code Generator](https://graphql-code-generator.com).
     ```sh
-    npm run generate:watch
+    npm run codegen:watch
     ```
 
     To check TypeScript typings.

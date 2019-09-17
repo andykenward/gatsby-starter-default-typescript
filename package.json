@@ -48,8 +48,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
-    "generate": "graphql-codegen",
-    "generate:watch": "graphql-codegen --watch"
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen --watch"
   },
   "repository": {
     "type": "git",
