@@ -12,7 +12,7 @@
     "gatsby-plugin-offline": "3.0.8",
     "gatsby-plugin-react-helmet": "3.1.8",
     "gatsby-plugin-sharp": "2.2.25",
-    "gatsby-plugin-typescript": "2.1.8",
+    "gatsby-plugin-typescript": "2.1.9",
     "gatsby-source-filesystem": "2.1.24",
     "gatsby-transformer-sharp": "2.2.16",
     "graphql": "14.5.6",
