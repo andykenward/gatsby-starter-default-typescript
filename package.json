@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Andy Kenward <hello@andykenward.com>",
   "dependencies": {
-    "@babel/core": "7.6.0",
+    "@babel/core": "7.6.2",
     "gatsby": "2.15.21",
     "gatsby-image": "2.2.20",
     "gatsby-plugin-manifest": "2.2.18",
