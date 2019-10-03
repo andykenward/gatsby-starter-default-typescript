@@ -27,7 +27,7 @@
     "@graphql-codegen/typescript": "1.7.0",
     "@graphql-codegen/typescript-operations": "1.7.0",
     "@types/node": "12.7.11",
-    "@types/react": "16.9.4",
+    "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",
     "@types/react-helmet": "5.0.10",
     "prettier": "1.18.2",
