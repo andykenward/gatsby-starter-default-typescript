@@ -8,6 +8,7 @@
     "@babel/core": "7.6.3",
     "gatsby": "2.15.33",
     "gatsby-image": "2.2.24",
+    "gatsby-plugin-extract-schema": "0.0.5",
     "gatsby-plugin-manifest": "2.2.20",
     "gatsby-plugin-offline": "3.0.12",
     "gatsby-plugin-react-helmet": "3.1.10",
@@ -23,9 +24,9 @@
     "ts-optchain": "0.1.8"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.7.0",
-    "@graphql-codegen/typescript": "1.7.0",
-    "@graphql-codegen/typescript-operations": "1.7.0",
+    "@graphql-codegen/cli": "1.8.1",
+    "@graphql-codegen/typescript": "1.8.1",
+    "@graphql-codegen/typescript-operations": "1.8.1",
     "@types/node": "12.7.12",
     "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",

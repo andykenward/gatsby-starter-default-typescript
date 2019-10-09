@@ -34,6 +34,7 @@ const Image: React.FC = () => {
    * The typings for GatsbyImage do not match the
    * typings generated for GatsbyImageSharpFluid
    * Fields can be null from the query but are required for GatsbyImage
+   * See if PR https://github.com/gatsbyjs/gatsby/pull/17065 has been merged
    */
   return imageFluid != null ? (
     <GatsbyImage fluid={imageFluid as FluidObject} />

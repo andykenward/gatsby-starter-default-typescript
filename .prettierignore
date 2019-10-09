@@ -1,5 +1,7 @@
 .cache
+node_modules
 public
 src/graphqlTypes.ts
 package-lock.json
+schema.json
 yarn.lock
