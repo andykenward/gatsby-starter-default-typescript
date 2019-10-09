@@ -232,10 +232,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@babel/parser@7.5.5":
-  version "7.5.5"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.5.5.tgz#02f077ac8817d3df4a832ef59de67565e71cca4b"
-  integrity sha512-E5BN68cqR7dhKan1SfqgPGhQ178bkVKpXTPEXnFJBrEt8/DKRZlybmy+IgYLTeN7tp1R5Ccmbm2rBk17sHYU3g==
+"@babel/parser@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.2.tgz#205e9c95e16ba3b8b96090677a67c9d6075b70a1"
+  integrity sha512-mdFqWrSPCmikBoaBYMuBulzTIKuXVPtEISFbRRVNwMWpCms/hmE2kRq0bblUHaNRKrjRlmVbx1sDHmjmRgD2Xg==
 
 "@babel/parser@^7.0.0", "@babel/parser@^7.4.4", "@babel/parser@^7.6.0", "@babel/parser@^7.6.2", "@babel/parser@^7.6.3":
   version "7.6.3"
@@ -836,14 +836,14 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@graphql-codegen/cli@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-1.7.0.tgz#aade52f5c265450258e8fe0e45dc91268e8939a8"
-  integrity sha512-glrk7A7vzazF8mfR3fUL7baorjxL9w3hFqPmLMp9uEMXyIP3Z0MrRacbDkFzeYXcGsm7K4k+ZK5Og2g8shVCuA==
+"@graphql-codegen/cli@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-1.8.1.tgz#2fc918ce97c6779c2549c7256445358333214bbe"
+  integrity sha512-HMJiEUqCEDqgeq6bzVssih3clz+4ShvtfEFl0bCY2iWs3+8CnbNooS+3KiFU1ESw86k+r8J5cKQTKLZmbU4P9g==
   dependencies:
-    "@babel/parser" "7.5.5"
-    "@graphql-codegen/core" "1.7.0"
-    "@graphql-codegen/plugin-helpers" "1.7.0"
+    "@babel/parser" "7.6.2"
+    "@graphql-codegen/core" "1.8.1"
+    "@graphql-codegen/plugin-helpers" "1.8.1"
     "@types/debounce" "1.2.0"
     "@types/is-glob" "4.0.1"
     "@types/mkdirp" "0.5.2"
@@ -851,27 +851,27 @@
     babel-types "7.0.0-beta.3"
     chalk "2.4.2"
     change-case "3.1.0"
-    chokidar "3.0.2"
-    commander "3.0.1"
+    chokidar "3.2.1"
+    commander "3.0.2"
     common-tags "1.8.0"
+    cosmiconfig "5.2.1"
     debounce "1.2.0"
     detect-indent "6.0.0"
     glob "7.1.4"
     graphql-config "2.2.1"
     graphql-import "0.7.1"
-    graphql-tag-pluck "0.8.4"
-    graphql-toolkit "0.5.11"
+    graphql-tag-pluck "0.8.5"
+    graphql-toolkit "0.5.16"
     graphql-tools "4.0.5"
     indent-string "4.0.0"
     inquirer "7.0.0"
     is-glob "4.0.1"
     is-valid-path "0.1.1"
-    js-yaml "3.13.1"
     json-to-pretty-yaml "1.2.2"
     listr "0.14.3"
     listr-update-renderer "0.5.0"
     log-symbols "3.0.0"
-    log-update "3.2.0"
+    log-update "3.3.0"
     mkdirp "0.5.1"
     prettier "1.18.2"
     request "2.88.0"
@@ -879,19 +879,29 @@
     tslib "1.10.0"
     valid-url "1.0.9"
 
-"@graphql-codegen/core@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/core/-/core-1.7.0.tgz#fdad4d3ea9de998f9effd0df492ac3c4c2633bbc"
-  integrity sha512-NghsdPhI4eqjOJvzC2f8sHPJL7vx4hMTXeg2U90YWtv07lQoxefsJwi4UND6dyALUoH5MdgMyxJl6LM9mYzOVA==
+"@graphql-codegen/core@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/core/-/core-1.8.1.tgz#a38c00101e11e537c8750df031e8de8e4c72f25d"
+  integrity sha512-QcJ37e6aTGUtu9daeReJJ2hmxe3sEN3QgKlSbpq+sO91Br38iT6ORiWmdKcVzKF3iLrj2BOkO2gWuRYz8umpmA==
   dependencies:
-    "@graphql-codegen/plugin-helpers" "1.7.0"
-    graphql-toolkit "0.5.11"
+    "@graphql-codegen/plugin-helpers" "1.8.1"
+    graphql-toolkit "0.5.16"
     tslib "1.10.0"
 
 "@graphql-codegen/plugin-helpers@1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.7.0.tgz#b1870a166cf34b2c67c053f2a9ec77823f78ac2d"
   integrity sha512-lUWd5A9BQNbPqlMr38Gh5sLsBgMnn26n90/hyTw2J7CFCKFKSMnNBjxfCZU5AFHGxwi6rsNEpwBHRBx3OVWsTA==
+  dependencies:
+    change-case "3.1.0"
+    common-tags "1.8.0"
+    import-from "3.0.0"
+    tslib "1.10.0"
+
+"@graphql-codegen/plugin-helpers@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.8.1.tgz#e84eb40988a0d4c0bdfb386d4a8628bf0901c6e3"
+  integrity sha512-gYvt9h/IN77ti7N88GIuSuX9LSGYNnGzpOovG3YBNdOKo4yYc5VT5TcbirigW101jHzjIPNSZVgFPWWg6HSxug==
   dependencies:
     change-case "3.1.0"
     common-tags "1.8.0"
@@ -1794,14 +1804,6 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-anymatch@^3.0.1:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.0.tgz#e609350e50a9313b472789b2f14ef35808ee14d6"
-  integrity sha512-Ozz7l4ixzI7Oxj2+cw+p0tVUt27BpaJ+1+q1TCeANWxHpvyn2+Un+YamBdfKu0uh8xLodGhoa1v7595NhKDAuA==
-  dependencies:
-    normalize-path "^3.0.0"
-    picomatch "^2.0.4"
-
 anymatch@~3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.1.tgz#c55ecf02185e2469259399310c173ce31233b142"
@@ -2540,7 +2542,7 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-braces@^3.0.1, braces@^3.0.2, braces@~3.0.2:
+braces@^3.0.1, braces@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
@@ -2956,21 +2958,6 @@ cheerio@^1.0.0-rc.3:
     lodash "^4.15.0"
     parse5 "^3.0.1"
 
-chokidar@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.0.2.tgz#0d1cd6d04eb2df0327446188cd13736a3367d681"
-  integrity sha512-c4PR2egjNjI1um6bamCQ6bUNPDiyofNQruHvKgHQ4gDUP/ITSVSzNsiI5OWtHOsX323i5ha/kk4YmOZ1Ktg7KA==
-  dependencies:
-    anymatch "^3.0.1"
-    braces "^3.0.2"
-    glob-parent "^5.0.0"
-    is-binary-path "^2.1.0"
-    is-glob "^4.0.1"
-    normalize-path "^3.0.0"
-    readdirp "^3.1.1"
-  optionalDependencies:
-    fsevents "^2.0.6"
-
 chokidar@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.2.1.tgz#4634772a1924512d990d4505957bf3a510611387"
@@ -3215,10 +3202,10 @@ command-exists@^1.2.2:
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.8.tgz#715acefdd1223b9c9b37110a149c6392c2852291"
   integrity sha512-PM54PkseWbiiD/mMsbvW351/u+dafwTJ0ye2qB60G1aGQP9j3xK2gmMDc+R34L3nDtx4qMCitXT75mkbkGJDLw==
 
-commander@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.1.tgz#4595aec3530525e671fb6f85fb173df8ff8bf57a"
-  integrity sha512-UNgvDd+csKdc9GD4zjtkHKQbT8Aspt2jCBqNSPp53vAS0L1tS9sXB2TCEOPHJ7kt9bN/niWkYj8T3RQSoMXdSQ==
+commander@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.2.tgz#6837c3fb677ad9933d1cfba42dd14d5117d6b39e"
+  integrity sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==
 
 commander@^2.11.0, commander@^2.20.0:
   version "2.20.0"
@@ -3473,7 +3460,7 @@ cors@^2.8.5:
     object-assign "^4"
     vary "^1"
 
-cosmiconfig@^5.0.0, cosmiconfig@^5.2.0:
+cosmiconfig@5.2.1, cosmiconfig@^5.0.0, cosmiconfig@^5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
   integrity sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==
@@ -5443,11 +5430,6 @@ fsevents@^1.2.7:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
 
-fsevents@^2.0.6:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.0.7.tgz#382c9b443c6cbac4c57187cdda23aa3bf1ccfc2a"
-  integrity sha512-a7YT0SV3RB+DjYcppwVDLtn13UQnmg0SWZS7ezZD0UjnLwXmy8Zm21GMVGLaFGimIqcvyMQaOJBrop8MyOp1kQ==
-
 fsevents@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.0.tgz#ce1a5f9ac71c6d75278b0c5bd236d7dfece4cbaa"
@@ -6167,10 +6149,10 @@ graphql-request@^1.5.0:
   dependencies:
     cross-fetch "2.2.2"
 
-graphql-tag-pluck@0.8.4:
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/graphql-tag-pluck/-/graphql-tag-pluck-0.8.4.tgz#9425627a9358365be519d532acaa38edde049d28"
-  integrity sha512-weT9fZPILIOkdW26ZkkiGf2OGvSfHQZBudYxkxnNoiLU+9RH+I0THE95iAvzMWbtKVmoBovLF/qQyK4ay/D7Bw==
+graphql-tag-pluck@0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/graphql-tag-pluck/-/graphql-tag-pluck-0.8.5.tgz#90660b88cf8d7f1dd2b1bacc5c8fdf45cb84f341"
+  integrity sha512-IHqMobX72OD4+HmGKesqzq7cRLo5gc40mEeTXzVzQGVD265sFDRoY2QS+smzNgvskClHSiFfKERK54y8VCXEjA==
   dependencies:
     "@babel/parser" "^7.4.4"
     "@babel/traverse" "^7.4.4"
@@ -6182,10 +6164,10 @@ graphql-tag@2.10.1:
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.1.tgz#10aa41f1cd8fae5373eaf11f1f67260a3cad5e02"
   integrity sha512-jApXqWBzNXQ8jYa/HLkZJaVw9jgwNqZkywa2zfFn16Iv1Zb7ELNHkJaXHR7Quvd5SIGsy6Ny7SUKATgnu05uEg==
 
-graphql-toolkit@0.5.11:
-  version "0.5.11"
-  resolved "https://registry.yarnpkg.com/graphql-toolkit/-/graphql-toolkit-0.5.11.tgz#f9adf1ecc4df455802d0cc223acbd35556f7d78e"
-  integrity sha512-CKYzzqcAUbG3mzeQ1+KDqggQMj1lcleanhU4h8EH9bKV2+IyY+vMXQcuxBuLF4BgxYeX04LQnPUfGi9F+lo0qw==
+graphql-toolkit@0.5.16:
+  version "0.5.16"
+  resolved "https://registry.yarnpkg.com/graphql-toolkit/-/graphql-toolkit-0.5.16.tgz#7673364e4458a6e6bc561eb3b87b2bb0e8360059"
+  integrity sha512-J3rAlsO7A/TJTZ7kLcFYy4/sIvB2AxiosxXFQICdsXf8R9b//fy7jmXnNo38ml1mm//915V0U5HMuAvo/hYiWQ==
   dependencies:
     "@kamilkisiela/graphql-tools" "4.0.6"
     "@types/glob" "7.1.1"
@@ -6940,7 +6922,7 @@ is-binary-path@^1.0.0:
   dependencies:
     binary-extensions "^1.0.0"
 
-is-binary-path@^2.1.0, is-binary-path@~2.1.0:
+is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
   integrity sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
@@ -7465,7 +7447,7 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@3.13.1, js-yaml@^3.10.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.5.2:
+js-yaml@^3.10.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.5.2:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
@@ -7876,10 +7858,10 @@ log-symbols@^1.0.2:
   dependencies:
     chalk "^1.0.0"
 
-log-update@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/log-update/-/log-update-3.2.0.tgz#719f24293250d65d0165f4e2ec2ed805ff062eec"
-  integrity sha512-KJ6zAPIHWo7Xg1jYror6IUDFJBq1bQ4Bi4wAEp2y/0ScjBBVi/g0thr0sUVhuvuXauWzczt7T2QHghPDNnKBuw==
+log-update@3.3.0, log-update@^3.0.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/log-update/-/log-update-3.3.0.tgz#3b0501815123f66cb33f300e3dac2a2b6ad3fdf5"
+  integrity sha512-YSKm5n+YjZoGZT5lfmOqasVH1fIH9xQA9A81Y48nZ99PxAP62vdCCtua+Gcu6oTn0nqtZd/LwRV+Vflo53ZDWA==
   dependencies:
     ansi-escapes "^3.2.0"
     cli-cursor "^2.1.0"
@@ -7893,15 +7875,6 @@ log-update@^2.3.0:
     ansi-escapes "^3.0.0"
     cli-cursor "^2.0.0"
     wrap-ansi "^3.0.1"
-
-log-update@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/log-update/-/log-update-3.3.0.tgz#3b0501815123f66cb33f300e3dac2a2b6ad3fdf5"
-  integrity sha512-YSKm5n+YjZoGZT5lfmOqasVH1fIH9xQA9A81Y48nZ99PxAP62vdCCtua+Gcu6oTn0nqtZd/LwRV+Vflo53ZDWA==
-  dependencies:
-    ansi-escapes "^3.2.0"
-    cli-cursor "^2.1.0"
-    wrap-ansi "^5.0.0"
 
 logalot@^2.0.0, logalot@^2.1.0:
   version "2.1.0"
@@ -10377,13 +10350,6 @@ readdirp@^2.2.1:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
-
-readdirp@^3.1.1:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.1.2.tgz#fa85d2d14d4289920e4671dead96431add2ee78a"
-  integrity sha512-8rhl0xs2cxfVsqzreYCvs8EwBfn/DhVdqtoLmw19uI3SC5avYX9teCurlErfpPXGmYtMHReGaP2RsLnFvz/lnw==
-  dependencies:
-    picomatch "^2.0.4"
 
 readdirp@~3.1.3:
   version "3.1.3"
