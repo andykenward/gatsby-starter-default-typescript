@@ -7,7 +7,7 @@
 
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { oc } from "ts-optchain"
 import { SiteMetadataQueryQuery } from "../graphqlTypes"
 
