@@ -19,7 +19,7 @@
     "graphql": "14.5.8",
     "prop-types": "15.7.2",
     "react": "16.10.2",
-    "react-dom": "16.10.2",
+    "react-dom": "16.11.0",
     "react-helmet": "5.2.1",
     "ts-optchain": "0.1.8"
   },
