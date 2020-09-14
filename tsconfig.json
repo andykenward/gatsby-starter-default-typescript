@@ -22,5 +22,5 @@
     "esModuleInterop": true,
     "plugins": [{ "transform": "ts-optchain/transform" }]
   },
-  "include": ["src"]
+  "include": ["src","graphql-types.ts"]
 }

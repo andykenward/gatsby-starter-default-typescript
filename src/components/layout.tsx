@@ -8,9 +8,9 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { ReactNode } from "react"
 import { oc } from "ts-optchain"
-import { SiteTitleQueryQuery } from "../graphqlTypes"
 import Header from "./header"
 import "./layout.css"
+import { SiteTitleQueryQuery } from "../../graphql-types"
 
 interface Props {
   children: ReactNode

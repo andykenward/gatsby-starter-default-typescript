@@ -1,7 +1,7 @@
 .cache
 node_modules
 public
-src/graphqlTypes.ts
+graphql-types.ts
 package-lock.json
 schema.json
 yarn.lock

@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import GatsbyImage, { FluidObject } from "gatsby-image"
 import React from "react"
 import { oc } from "ts-optchain"
-import { ImageQueryQuery } from "../graphqlTypes"
+import { ImageQueryQuery } from "../../graphql-types"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized

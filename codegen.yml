@@ -7,7 +7,7 @@ config:
   namingConvention:
     enumValues: keep
 generates:
-  ./src/graphqlTypes.ts:
+  graphql-types.ts:
     hooks:
       afterOneFileWrite:
         - prettier --write
