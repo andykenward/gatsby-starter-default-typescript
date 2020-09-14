@@ -8,8 +8,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
-import { oc } from "ts-optchain"
-import { SiteMetadataQueryQuery } from "../../graphql-types"
+import { SiteMetadataQuery } from "../../graphql-types"
 
 type MetaProps = JSX.IntrinsicElements["meta"]
 
@@ -21,9 +20,9 @@ interface Props {
 }
 
 const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
-  const { site }: SiteMetadataQueryQuery = useStaticQuery(
+  const { site } = useStaticQuery<SiteMetadataQuery>(
     graphql`
-      query SiteMetadataQuery {
+      query SiteMetadata {
         site {
           siteMetadata {
             title
@@ -35,7 +34,7 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
     `
   )
 
-  const metaDescription = description || oc(site).siteMetadata.description("")
+  const metaDescription = description || site?.siteMetadata?.description || ""
 
   return (
     <Helmet
@@ -43,7 +42,7 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${oc(site).siteMetadata.title("")}`}
+      titleTemplate={`%s | ${site?.siteMetadata?.title || ""}`}
       meta={[
         {
           name: `description`,
@@ -67,7 +66,7 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: oc(site).siteMetadata.author(""),
+          content: site?.siteMetadata?.author || "",
         },
         {
           name: `twitter:title`,

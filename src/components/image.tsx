@@ -1,8 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import GatsbyImage, { FluidObject } from "gatsby-image"
 import React from "react"
-import { oc } from "ts-optchain"
-import { ImageQueryQuery } from "../../graphql-types"
+import { ImageQuery } from "../../graphql-types"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -16,8 +15,8 @@ import { ImageQueryQuery } from "../../graphql-types"
  */
 
 const Image: React.FC = () => {
-  const data: ImageQueryQuery = useStaticQuery(graphql`
-    query ImageQuery {
+  const data = useStaticQuery<ImageQuery>(graphql`
+    query Image {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -28,7 +27,7 @@ const Image: React.FC = () => {
     }
   `)
 
-  const imageFluid = oc(data).placeholderImage.childImageSharp.fluid() || null
+  const imageFluid = data?.placeholderImage?.childImageSharp?.fluid || null
   /**
    * The `as FluidObject` is not ideal.
    * The typings for GatsbyImage do not match the

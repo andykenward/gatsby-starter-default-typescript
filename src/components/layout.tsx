@@ -7,19 +7,18 @@
 
 import { graphql, useStaticQuery } from "gatsby"
 import React, { ReactNode } from "react"
-import { oc } from "ts-optchain"
 import Header from "./header"
 import "./layout.css"
-import { SiteTitleQueryQuery } from "../../graphql-types"
+import { SiteTitleQuery } from "../../graphql-types"
 
 interface Props {
   children: ReactNode
 }
 
 const useSiteTitle = () => {
-  const data: SiteTitleQueryQuery = useStaticQuery(
+  const data  = useStaticQuery<SiteTitleQuery>(
     graphql`
-      query SiteTitleQuery {
+      query SiteTitle {
         site {
           siteMetadata {
             title
@@ -28,7 +27,7 @@ const useSiteTitle = () => {
       }
     `
   )
-  return oc(data).site.siteMetadata.title("")
+  return data?.site?.siteMetadata?.title || ""
 }
 
 const Layout: React.FC<Props> = ({ children }) => {

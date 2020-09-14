@@ -3,7 +3,7 @@
     // Target latest version of ECMAScript.
     "target": "esnext",
     // Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'.
-    "module": "commonjs",
+    "module": "esnext",
     // Specify library files to be included in the compilation.
     "lib": ["dom", "es2017"],
     // Specify JSX code generation: 'preserve', 'react-native', or 'react'.
@@ -11,16 +11,18 @@
     // Search under node_modules for non-relative imports.
     "moduleResolution": "node",
     // Process & infer types from .js files.
-    "allowJs": true,
+    // "allowJs": true,
     // Don't emit; allow Babel to transform files.
     "noEmit": true,
     // Enable strictest settings like strictNullChecks & noImplicitAny.
     "strict": true,
     // Disallow features that require cross-file information for emit.
-    "isolatedModules": true,
+    // "isolatedModules": true,
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
-    "plugins": [{ "transform": "ts-optchain/transform" }]
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true
   },
-  "include": ["src","graphql-types.ts"]
+  "include": ["src"]
 }
