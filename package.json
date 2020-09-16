@@ -10,7 +10,7 @@
     "gatsby-plugin-extract-schema": "^0.0.5",
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sharp": "^2.6.35",
+    "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-source-filesystem": "^2.3.29",
     "gatsby-transformer-sharp": "^2.5.14",
     "react": "^16.13.1",
