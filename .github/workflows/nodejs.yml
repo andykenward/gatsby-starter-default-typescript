@@ -23,7 +23,7 @@ jobs:
       uses: actions/setup-node@v2.1.2
       with:
         node-version: ${{ matrix.node-version }}
-    - uses: actions/cache@v2
+    - uses: actions/cache@v2.1.5
       id: cache
       with:
         path: ~/.npm
